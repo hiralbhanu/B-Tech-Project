@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.imageclassifier">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <service android:name=".CalculateDuplicate" />
+        <service android:name=".CalculateDuplicate2" />
+        <service android:name=".CalculateText" />
+        <service android:name=".CalculateText2" />
+        <service android:name=".CalculateKnown" />
+
+        <activity android:name=".MainActivity" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".DuplicateActivity" />
+
+
+
+        <activity android:name=".TextActivity" />
+        <activity android:name=".FullScreenViewActivity" />
+        <activity android:name=".PlainActivity" />
+        <activity android:name=".PersonActivity" />
+        <activity android:name=".ScanActivity" />
+        <activity android:name=".KnownActivity" />
+
+
+
+
+
+
+        <activity android:name=".DetailsActivity">
+
+        </activity>
+
+    </application>
+
+</manifest>
