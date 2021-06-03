@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".TextActivity">
+
+    <Button
+        android:id="@+id/plainbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="160dp"
+        android:onClick="plainScrn"
+        android:padding="16dp"
+        android:text="Plain Quotes" />
+
+    <Button
+        android:id="@+id/personbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plainbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:onClick="personScrn"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:text="Personality Quotes" />
+
+    <Button
+        android:id="@+id/scanbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="120dp"
+        android:onClick="scanScrn"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:text="Scanned Documents" />
+
+</RelativeLayout>
